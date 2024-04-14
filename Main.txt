@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+        User userBanana = new User("banana@example.com");
+        System.out.println("Salutations, " + userBanana.fname);
+        System.out.println("Guest status: " + userBanana.isGuest());
+        userBanana.makeNonGuest("Banana", "Split", "password1234");
+        User userBread = new User("bread@example.com");
+        Product productApple = new Product("Apple", 10, "whatever");
+        productApple.setPrice(20);
+        productApple.setNumberOfPieces(5);
+    }
+}
